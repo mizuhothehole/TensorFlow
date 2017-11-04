@@ -322,3 +322,51 @@ export PATH=/home/shin/anaconda2/bin:$PATH
 Thank you for installing Anaconda2!
 
 So, here are the libs we can see.
+shin@shin-X555LPB:~$ conda create -n tensorflow python=2.7
+conda: コマンドが見つかりません
+shin@shin-X555LPB:~$ cd /home/shin/anaconda2/bin
+shin@shin-X555LPB:~/anaconda2/bin$ conda create -n tensorflow python=2.7
+conda: コマンドが見つかりません
+shin@shin-X555LPB:~/anaconda2/bin$ ./conda create -n tensorflow python=2.7
+
+CondaValueError: prefix already exists: /home/shin/anaconda2/envs/tensorflow
+
+shin@shin-X555LPB:~/anaconda2/bin$ source activate tensorflow
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0rc0-cp27-none-linux_x86_64.whl
+Collecting tensorflow==0.8.0rc0 from https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0rc0-cp27-none-linux_x86_64.whl
+  Cache entry deserialization failed, entry ignored
+  Downloading https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0rc0-cp27-none-linux_x86_64.whl (22.2MB)
+    100% |████████████████████████████████| 22.2MB 51kB/s 
+Collecting six>=1.10.0 (from tensorflow==0.8.0rc0)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading six-1.11.0-py2.py3-none-any.whl
+Collecting numpy>=1.8.2 (from tensorflow==0.8.0rc0)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading numpy-1.13.3-cp27-cp27mu-manylinux1_x86_64.whl (16.6MB)
+    100% |████████████████████████████████| 16.7MB 75kB/s 
+Collecting protobuf==3.0.0b2 (from tensorflow==0.8.0rc0)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading protobuf-3.0.0b2-py2.py3-none-any.whl (326kB)
+    100% |████████████████████████████████| 327kB 2.3MB/s 
+Collecting wheel (from tensorflow==0.8.0rc0)
+  Downloading wheel-0.30.0-py2.py3-none-any.whl (49kB)
+    100% |████████████████████████████████| 51kB 3.0MB/s 
+Collecting setuptools (from protobuf==3.0.0b2->tensorflow==0.8.0rc0)
+  Downloading setuptools-36.6.0-py2.py3-none-any.whl (481kB)
+    100% |████████████████████████████████| 481kB 1.6MB/s 
+Installing collected packages: six, numpy, setuptools, protobuf, wheel, tensorflow
+Successfully installed numpy-1.13.3 protobuf-3.0.0b2 setuptools-36.6.0 six-1.11.0 tensorflow-0.8.0rc0 wheel-0.30.0
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ 
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ python
+Python 2.7.14 |Anaconda, Inc.| (default, Oct 27 2017, 18:21:12) 
+[GCC 7.2.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow
+>>> 
+
+Here we can use tensorflow
+
+
