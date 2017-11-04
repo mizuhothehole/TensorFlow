@@ -478,4 +478,5 @@ glib-2.53.6-h5 100% |################################| Time: 0:00:04   1.88 MB/s
         http://localhost:8888/?token=a0fd8b466ce0f57a49f67acc6ca361d60a4ba1296fe4fe10
 [I 16:57:52.204 NotebookApp] Accepting one-time-token-authenticated connection from 127.0.0.1
 
+http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python2
 
