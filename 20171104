@@ -369,4 +369,113 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Here we can use tensorflow
 
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ source activate tensorflow
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ ./conda install ipython
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment /home/shin/anaconda2/envs/tensorflow:
+
+The following NEW packages will be INSTALLED:
+
+    backports:                          1.0-py27h63c9359_1   
+    backports.shutil_get_terminal_size: 1.0.0-py27h5bc021e_2 
+    decorator:                          4.1.2-py27h1544723_0 
+    enum34:                             1.1.6-py27h99a27e9_1 
+    ipython:                            5.4.1-py27h36c99b6_1 
+    ipython_genutils:                   0.2.0-py27h89fb69b_0 
+    pathlib2:                           2.3.0-py27h6e9d198_0 
+    pexpect:                            4.2.1-py27hcf82287_0 
+    pickleshare:                        0.7.4-py27h09770e1_0 
+    prompt_toolkit:                     1.0.15-py27h1b593e1_0
+    ptyprocess:                         0.5.2-py27h4ccb14c_0 
+    pygments:                           2.2.0-py27h4a8b6f5_0 
+    scandir:                            1.6-py27hf7388dc_0   
+    simplegeneric:                      0.8.1-py27h19e43cd_0 
+    six:                                1.11.0-py27h5f960f1_1
+    traitlets:                          4.3.2-py27hd6ce930_0 
+    wcwidth:                            0.1.7-py27h9e3e1ab_0 
+
+Proceed ([y]/n)? y
+
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ ./conda install jupyter
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment /home/shin/anaconda2/envs/tensorflow:
+
+The following NEW packages will be INSTALLED:
+
+    backports_abc:      0.5-py27h7b3c97b_0        
+    bleach:             2.0.0-py27h3a0dcc8_0      
+    configparser:       3.5.0-py27h5117587_0      
+    dbus:               1.10.22-h3b5a359_0        
+    entrypoints:        0.2.3-py27h502b47d_2      
+    expat:              2.2.4-h6ea4f2b_2          
+    fontconfig:         2.12.4-h88586e7_1         
+    freetype:           2.8-h52ed37b_0            
+    functools32:        3.2.3.2-py27h4ead58f_1    
+    glib:               2.53.6-h56f7bfe_1         
+    gmp:                6.1.2-hb3b607b_0          
+    gst-plugins-base:   1.12.2-he3457e5_0         
+    gstreamer:          1.12.2-h4f93127_0         
+    html5lib:           0.999999999-py27hdf15f34_0
+    icu:                58.2-h211956c_0           
+    ipykernel:          4.6.1-py27hc93e584_0      
+    ipywidgets:         7.0.0-py27h4fda95d_0      
+    jinja2:             2.9.6-py27h82327ae_1      
+    jpeg:               9b-h376031c_1             
+    jsonschema:         2.6.0-py27h7ed5aa4_0      
+    jupyter:            1.0.0-py27h505fd4b_0      
+    jupyter_client:     5.1.0-py27hbee1118_0      
+    jupyter_console:    5.2.0-py27hc6bee7e_1      
+    jupyter_core:       4.3.0-py27hcd9ae3a_0      
+    libpng:             1.6.32-hda9c8bc_2         
+    libsodium:          1.0.13-h31c71d8_2         
+    libxcb:             1.12-h84ff03f_3           
+    libxml2:            2.9.4-h6b072ca_5          
+    markupsafe:         1.0-py27h97b2822_1        
+    mistune:            0.7.4-py27h6da7e90_0      
+    nbconvert:          5.3.1-py27he041f76_0      
+    nbformat:           4.4.0-py27hed7f2b2_0      
+    notebook:           5.0.0-py27h3661c2b_2      
+    pandoc:             1.19.2.1-hea2e7c5_1       
+    pandocfilters:      1.4.2-py27h428e1e5_1      
+    pcre:               8.41-hc71a17e_0           
+    pyqt:               5.6.0-py27h4b1e83c_5      
+    python-dateutil:    2.6.1-py27h4ca5741_1      
+    pyzmq:              16.0.2-py27h297844f_2     
+    qt:                 5.6.2-h974d657_12         
+    qtconsole:          4.3.1-py27hc444b0d_0      
+    singledispatch:     3.4.0.3-py27h9bcb476_0    
+    sip:                4.18.1-py27he9ba0ab_2     
+    ssl_match_hostname: 3.5.0.1-py27h4ec10b9_2    
+    terminado:          0.6-py27h4be8df9_0        
+    testpath:           0.3.1-py27hc38d2c4_0      
+    tornado:            4.5.2-py27h97b179f_0      
+    webencodings:       0.5.1-py27hff10b21_1      
+    widgetsnbextension: 3.0.2-py27hcb77dec_1      
+    xz:                 5.2.3-h2bcbf08_1          
+    zeromq:             4.2.2-hb0b69da_1          
+
+Proceed ([y]/n)? y
+
+expat-2.2.4-h6 100% |################################| Time: 0:00:00   1.74 MB/s
+jpeg-9b-h37603 100% |################################| Time: 0:00:00   2.35 MB/s
+glib-2.53.6-h5 100% |################################| Time: 0:00:04   1.88 MB/s
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ 
+
+(tensorflow) shin@shin-X555LPB:~/anaconda2/bin$ jupyter notebook
+[I 16:57:51.883 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 16:57:52.053 NotebookApp] Serving notebooks from local directory: /home/shin/anaconda2/bin
+[I 16:57:52.053 NotebookApp] 0 active kernels 
+[I 16:57:52.053 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/?token=a0fd8b466ce0f57a49f67acc6ca361d60a4ba1296fe4fe10
+[I 16:57:52.053 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 16:57:52.054 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=a0fd8b466ce0f57a49f67acc6ca361d60a4ba1296fe4fe10
+[I 16:57:52.204 NotebookApp] Accepting one-time-token-authenticated connection from 127.0.0.1
+
 
