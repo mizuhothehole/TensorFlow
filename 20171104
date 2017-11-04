@@ -480,3 +480,14 @@ glib-2.53.6-h5 100% |################################| Time: 0:00:04   1.88 MB/s
 
 http://localhost:8888/notebooks/Untitled.ipynb?kernel_name=python2
 
+sample code^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+import tensorflow as tf
+
+x = tf.constant(1.0)
+w = tf.constant(0.8)
+y_ = tf.add(x,w)
+
+with tf.Session() as sess:
+    loss = sess.run(y_);
+    print(loss)
