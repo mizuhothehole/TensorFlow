@@ -1,0 +1,75 @@
+tensor flow function to make some tensors
+
+samples:
+
+1.tf.ones
+
+import tensorflow as tf
+
+session = tf.InteractiveSession()
+x = tf.ones([2,3], tf.int32)
+print(session.run(x))
+
+------------>
+[[1 1 1]
+ [1 1 1]]
+ 
+ 2.tf.fill
+ 
+ import tensorflow as tf
+
+sess = tf.InteractiveSession()
+print(sess.run(tf.fill([5,5],22)))
+------------>
+[[22 22 22 22 22]
+ [22 22 22 22 22]
+ [22 22 22 22 22]
+ [22 22 22 22 22]
+ [22 22 22 22 22]]
+ 
+ 3.tf.constant
+ 
+ import tensorflow as tf
+
+sess = tf.InteractiveSession()
+print(sess.run(tf.constant([2,9,4],shape=[8])))
+print(sess.run(tf.constant([2,9,4],shape=[8,8])))
+print(sess.run(tf.constant([2,9,4],shape=[3])))
+print(sess.run(tf.constant([2,9,4,7],shape=[2,2])))
+print(sess.run(tf.constant([2,9,4],shape=[8,5])))
+
+import tensorflow as tf
+
+sess = tf.InteractiveSession()
+
+print(sess.run(tf.constant([2,9,4],shape=[8])))
+
+print(sess.run(tf.constant([2,9,4],shape=[8,8])))
+
+print(sess.run(tf.constant([2,9,4],shape=[3])))
+
+print(sess.run(tf.constant([2,9,4,7],shape=[2,2])))
+
+print(sess.run(tf.constant([2,9,4],shape=[8,5])))
+
+[2 9 4 4 4 4 4 4]
+[[2 9 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]
+ [4 4 4 4 4 4 4 4]]
+[2 9 4]
+[[2 9]
+ [4 7]]
+[[2 9 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]
+ [4 4 4 4 4]]
+
